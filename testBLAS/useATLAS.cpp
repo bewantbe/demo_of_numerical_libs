@@ -7,7 +7,8 @@
 // For ATLAS 3.10.0,link with libtatlas.so
 
 //compile in Debian 7 (wheezy)
-//  g++ -I/usr/include/atlas -lcblas -latlas -llapack_atlas  main.cpp
+//  g++ -I/usr/include/atlas -llapack_atlas -lcblas -latlas useATLAS.cpp
+//  g++ -I/usr/include/atlas -llapack_atlas -lblas useATLAS.cpp
 
 #include <sys/time.h>
 #include <stdio.h>

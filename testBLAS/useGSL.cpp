@@ -1,6 +1,7 @@
 // test BLAS, and linear solver in GSL (with standard BLAS)
 // compile with (Debian 7 Wheezy)
 // g++ useGSL.cpp -lgsl -lblas
+// g++ useGSL.cpp -lgsl -lgslcblas
 
 #include <sys/time.h>
 #include <stdio.h>

@@ -15,6 +15,8 @@
 
 // compile with
 // g++ -O2 -msse2 -fopenmp -I/usr/include/eigen3 useEigen.cpp
+// g++ -O2 -march=native -fopenmp -I/usr/include/eigen3 useEigen.cpp
+// g++ -O3 -march=native -fopenmp -std=c++11 -I/usr/include/eigen3 useEigen.cpp
 
 #include <sys/time.h>
 #include <stdio.h>
@@ -88,8 +90,8 @@ double MatAbsMax(const MatrixXd A, const MatrixXd B, size_t m, size_t n)
 
 int main(int argc, char *argv[])
 {
-  size_t m = 1000;  // row
-  size_t n = 1000;  // column
+  size_t m = 4000;  // row
+  size_t n = 4000;  // column
   double t0, t1;
 
   if (argc>1) {

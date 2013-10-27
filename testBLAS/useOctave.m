@@ -1,8 +1,8 @@
 % use Octave (usually link to libatlas.so)
 toct = @() fprintf('  time: %5.3f sec.\n', toc());
 
-m = 1000;
-n = 1000;
+m = 4000;
+n = 4000;
 
 disp('Allocating memory:');
 tic();
